@@ -26,3 +26,8 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+# Location of Solr search service
+SOLR_URL = 'http://localhost:8080/shanti-solr'
+SSL_ENABLED=true
+FATHOM_AUTHENTICATION = true

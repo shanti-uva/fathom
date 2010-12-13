@@ -28,6 +28,21 @@ Rails::Initializer.run do |config|
   # you must remove the Active Record framework.
   # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
 
+  # Your secret key for verifying cookie session data integrity.
+  # If you change this key, all old sessions will become invalid!
+  # Make sure the secret is at least 30 characters and all random, 
+  # no regular words or you'll be exposed to dictionary attacks.
+  config.action_controller.session = {
+    :session_key => '_shanti_session',
+    :secret      => 'c3504ee7ee96612efd0c8ed2ebf53ee7de5a6278fab6d63c11ff66984320e012794e4c185d870b7c834812eaa469c27aaa58d51c9e32f130534fc62d2939bc52'
+  }
+
+  # Use the database for sessions instead of the cookie-based default,
+  # which shouldn't be used to store highly confidential information
+  # (create the session table with 'rake db:sessions:create')
+  config.action_controller.session_store = :active_record_store
+
+
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
@@ -38,4 +53,14 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+  
+
+  config.gem 'mislav-will_paginate', :version => '~> 2.3.8', :lib => 'will_paginate',
+    :source => 'http://gems.github.com'
+
+  #RedCloth - converts plain text or textile to HTML (also used by HAML)
+  config.gem "RedCloth", :lib=>"redcloth", :version => "~> 3.0.4"
+
+  #Solr-Ruby - Solr connections for Ruby
+  config.gem "solr-ruby", :lib => "solr", :version => "~> 0.0.7"
 end

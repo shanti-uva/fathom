@@ -1,4 +1,6 @@
 # Settings specified here will take precedence over those in config/environment.rb
+require 'ruby-debug'
+Debugger.start
 
 # In the development environment your application's code is reloaded on
 # every request.  This slows down response time but is perfect for development
@@ -15,3 +17,10 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+# Location of Solr search service
+SOLR_URL = 'http://localhost:8983/solr'
+#SOLR_URL = 'http://localhost:8080/thlib-solr-fathom'
+
+SSL_ENABLED = false
+FATHOM_AUTHENTICATION = true
