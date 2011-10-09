@@ -1,9 +1,6 @@
 [submodule "vendor/plugins/shanti_integration"]
 	path = vendor/plugins/shanti_integration
 	url = git@github.com:shanti-uva/shanti_integration.git
-[submodule "vendor/plugins/fathom_engine"]
-	path = vendor/plugins/fathom_engine
-	url = git@github.com:shanti-uva/fathom_engine.git
 [submodule "vendor/plugins/acts-as-taggable-on"]
 	path = vendor/plugins/acts-as-taggable-on
 	url = git://github.com/mbleigh/acts-as-taggable-on.git
