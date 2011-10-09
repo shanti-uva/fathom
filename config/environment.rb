@@ -64,3 +64,16 @@ Rails::Initializer.run do |config|
   #Solr-Ruby - Solr connections for Ruby
   config.gem "solr-ruby", :lib => "solr", :version => "~> 0.0.7"
 end
+
+require 'will_paginate'
+
+APPLICATION_DOMAIN = 'shanti.virginia.edu'
+
+# Target e-mails for exception handling.
+FATHOM_NO_REPLY_ADDRESS = 'shanticontact@collab.itc.virginia.edu'
+FATHOM_CONTACT_ADDRESS = FATHOM_NO_REPLY_ADDRESS
+ExceptionNotification::Notifier.sender_address = %Q("Application Error" <#{FATHOM_NO_REPLY_ADDRESS}>)
+ExceptionNotification::Notifier.exception_recipients = %w(hm5u@virginia.edu fathom@collab.itc.virginia.edu)
+
+ENV['RECAPTCHA_PUBLIC_KEY']  = '6LcK2gkAAAAAANGvhQ8jxCvvlXUulHx1RGUNhrd0'
+ENV['RECAPTCHA_PRIVATE_KEY'] = '6LcK2gkAAAAAAGgFUYoC4ogH1xwcNKTfHMCwRVLG'
