@@ -388,26 +388,22 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #sub-nav #profiles-login-wrap ul.login-menu li.hover a{ color:#645c4c; }
 
 /*---------- login dropdown ------------------*/
-#sub-nav #profiles-login-wrap ul.login-menu ul{ width:100px; visibility:hidden; position:absolute; top:100%; left:-38px; z-index:999; list-style:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul{ width:100px; visibility:hidden; position:absolute; top:100%; left:-23px; z-index:999; list-style:none;}
 #sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; padding:3px 12px 5px 18px; font-weight:bold; background-color:#f6f6f6; color:#645c4c; border:none;}
 
-#sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ background-color:#ddd; }
-#sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#645c4c; }
+#sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ background-color:#ddd;background-image:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#645c4c; background-image:none; }
 
 #sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-first{ border-bottom:1px dashed #999;}
 
 #sub-nav #profiles-login-wrap ul.login-menu ul li a,
-#sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ width:100px; display:inline-block; float:none; line-height:18px; padding:3px 0px; margin:0; text-decoration:none; border-right:none;}
-#sub-nav #profiles-login-wrap ul.login-menu ul li a:hover{ text-decoration:none;}
-
-
-
+#sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ background-image:none; width:100px; display:inline-block; float:none; line-height:18px; padding:3px 0px; margin:0; text-decoration:none; border-right:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li a:hover{ background-image:none; text-decoration:none;}
 
 /*---- IE fixes ----*/
 #ie-root #sub-nav #profiles-login-wrap ul.login-menu ul li{ display:inline; width:100%; }							  
 /* IE 6 & 7 Needs Inline Block */
-#ie-root-lte7 #sub-nav #profiles-login-wrap ul.login-menu ul li a{ border:none; width:100%; display:inline-block; } 
-
+#ie-root-lte7 #sub-nav #profiles-login-wrap ul.login-menu ul li a{ border:none; width:100%; display:inline-block; }
 
 
 /******** SEARCH on navbar ********/
