@@ -366,14 +366,14 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 
 /******** UVa Profiles logging ********/
 
-
 .log-in {
 background-color: transparent;
 background-image: none;
 }
 
-#sub-nav #profiles-logging-wrap{ display:inline; float:right; width:280px;}
+#sub-nav #profiles-logging-wrap{ display:inline; float:right; width:400px;}
 
+#sub-nav #profiles-logging-wrap ul{ float:right;}
 
 #sub-nav #profiles-logging-wrap ul li a,
 #sub-nav #profiles-logging-wrap ul li a:visited {
@@ -381,7 +381,8 @@ float: right;
 font-size: 12px;
 color: #645c4c;
 display: inline;
-padding: 1px 0px 1px 9px;
+padding: 1px 9px; 
+border-right:1px solid #666;
 margin: 0;
 border: none;
 line-height: 18px;
@@ -390,10 +391,13 @@ height:14px;
 
 #sub-nav #profiles-logging-wrap ul li a:hover{ text-decoration:underline;}
 
-#sub-nav #profiles-logging-wrap ul li:first-child a{ padding: 1px 9px; border-right:1px solid #666;}
+#sub-nav #profiles-logging-wrap ul li:last-child a{ padding:1px 0px 1px 9px; border-right:none;}
 
-
-
+/*----- safari fix -----*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#sub-nav #profiles-logging-wrap ul li a,
+#sub-nav #profiles-logging-wrap ul li a:visited { margin-top:5px;}
+}
 
 
 
@@ -420,8 +424,9 @@ margin-top:4px;
 float:right;
 }
 
-#uvaprofiles-search-wrap form input#s [type="text"] {
-height: ;
+/*----- safari fix -----*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#uvaprofiles-search-wrap form input#s{ padding: 2px 18px 0px 6px;}
 }
  
 #uvaprofiles-search-wrap form #submit {
