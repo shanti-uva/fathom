@@ -384,12 +384,12 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #sub-nav #profiles-login-wrap ul.login-menu li.login-last a,
 #sub-nav #profiles-login-wrap ul.login-menu li.login-last a:visited{ border:none; padding:1px 0px 1px 9px;}
 
-#sub-nav #profiles-login-wrap ul.login-menu li:hover{ background-color:transparent; color:#645c4c; position:relative; }
+#sub-nav #profiles-login-wrap ul.login-menu li:hover{ background-color:transparent; background-image:none; color:#645c4c; position:relative; }
 #sub-nav #profiles-login-wrap ul.login-menu li.hover a{ color:#645c4c; }
 
 /*---------- login dropdown ------------------*/
-#sub-nav #profiles-login-wrap ul.login-menu ul{ width:100px; visibility:hidden; position:absolute; top:100%; left:-38px; list-style: none;}
-#sub-nav #profiles-login-wrap ul.login-menu ul li{ float:left; margin:0px; padding:3px 12px 5px 18px; font-weight:bold; background-color:#f6f6f6; color:#645c4c; border:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul{ width:100px; visibility:hidden; position:absolute; top:100%; left:-38px; z-index:999; list-style:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; padding:3px 12px 5px 18px; font-weight:bold; background-color:#f6f6f6; color:#645c4c; border:none;}
 
 #sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ background-color:#ddd; }
 #sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#645c4c; }
@@ -406,7 +406,7 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 /*---- IE fixes ----*/
 #ie-root #sub-nav #profiles-login-wrap ul.login-menu ul li{ display:inline; width:100%; }							  
 /* IE 6 & 7 Needs Inline Block */
-#ie-root-lte7 #sub-nav #profiles-login-wrap ul.login-menu ul li a{ border:none; width:100%; display:inline-block; }
+#ie-root-lte7 #sub-nav #profiles-login-wrap ul.login-menu ul li a{ border:none; width:100%; display:inline-block; } 
 
 
 
