@@ -11,7 +11,7 @@
 #forgot-password #login-error{ color:red}
 #login-toggle{ float:left; text-indent:-9999px; height:17px; width:100px; margin:0px; display:block; }
 #login-toggle.logged-in{ float:left; text-indent:-9999px; height:17px; width:160px; margin:0 0 0 5px; display:block; }
-#uva-login-toggle{ float:left; text-indent:-9999px; height:17px; width:84px; margin:0 5px 0 0; display:block;  }
+
 .log-in{ background:url(../images/other_login.gif) no-repeat right top}
 .uva-log-in{ background:url(../images/uva_login.gif) no-repeat right top}
 .logged-in{ background:url(../images/logged_in.png) no-repeat right top}
@@ -393,16 +393,17 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 
 /*---------- login dropdown ------------------*/
 #sub-nav #profiles-login-wrap ul.login-menu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:-8px; z-index:999; list-style:none;}
-#sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:18px; padding:2px 12px; font-weight:bold; background-color: #828378; color:#fff; border:1px solid #fff;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:16px; padding:2px 12px; font-weight:bold; background-color: #828378; color:#fff; border:1px solid #fff;}
 
 #sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ border:1px solid #aaa; background-color: #fff; background-image:none;}
 #sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#415c7e; background-image:none; }
 
-#sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-first a,
-#sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-first a:visited{ border-bottom:1px dashed #fff;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-last{ 
+-moz-border-radius: 0px 0px 5px 5px; -webkit-border-radius:5px; -webkit-border-bottom-left-radius:5px;  -webkit-border-bottom-right-radius:5px;  border-radius:0px 0px 5px 5px;
+}
 
 #sub-nav #profiles-login-wrap ul.login-menu ul li a,
-#sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:18px; height:18px; padding:0px; margin:0; text-decoration:none; border-right:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:16px; height:16px; padding:0px; margin:0; text-decoration:none; border-right:none;}
 #sub-nav #profiles-login-wrap ul.login-menu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none;}
 
 /*---- IE fixes ----*/
