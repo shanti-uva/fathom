@@ -1,7 +1,7 @@
 /* --- SHANTI at the University of Virginia --- style-css */
 /* --- Page Structure -------------------*/
 /*#main{padding-bottom:50px}*/ /* moved to fathom.css */
-#login, #masthead, #main, #nav, #main-content, #footer{ width:918px; margin:0 auto; overflow:hidden} /* masthead, main moved to fathom.css */
+#login, #masthead, #main, #nav, #main-content, #footer{ width:918px; margin:0 auto; } /* masthead, main moved to fathom.css */
 #featured{ width:678px; margin:0 auto; overflow:hidden}
 #login-wrapper{ overflow:hidden; position:relative; z-index:3; display:none; border-bottom:6px solid #568ea7; background:#0e212b !important; }
 #login{ color:#bfe5f8; padding:10px 0; font-size:.7em}
@@ -272,9 +272,9 @@ a#cat4{ display:block; width:30px; height:24px; float:right; background-image:ur
 #nav ul li a:active{color:#efefef; background:url(../images/bg_nav_wrapper_tabs.png) no-repeat center top}
 #nav ul li.current_page_item a:hover, #nav ul li.current_page_ancestor a:hover{ font-size:12px; margin:0 3px 0 0;  padding:5px 9px 11px;}
 
-#sub-nav-wrapper{ background:#f7f6f0 url(../images/bg_main_wrapper_tile.png) repeat-x left top; border-bottom:none}
+#sub-nav-wrapper{ background:#f7f6f0 url(../images/bg_main_wrapper_tile.png) repeat-x left top; border-bottom:none; }
 #sub-nav ul li.current_page_item a{ color:#efefef; font-size:1em; margin:0 3px 0 0; border:1px solid #e4dcce; border-bottom:none; }
-#sub-nav ul li a:hover{ margin:0 3px 0 0; border:1px solid #e7e1d7; border-bottom:none; color:#3e392f; font-size:1em}
+#sub-nav ul li a:hover{ border-color: #e7e1d7; border-bottom:none; color:#3e392f;}
 #sub-nav ul li a:active{color:#efefef;}
 
 #sidebar ul{margin:0px}
@@ -289,7 +289,7 @@ a#cat4{ display:block; width:30px; height:24px; float:right; background-image:ur
 #sidebar ul li.page-item-872 {padding-bottom:7px; background:url(../images/hr-divider-sidebar.gif) no-repeat 0px 7px}
 
 
-#sub-nav-wrapper #sub-nav{ height:27px; margin:0px; margin-top:4px; text-align:center;  margin-right:auto; margin-left:auto; border-bottom:none; padding-bottom:1px; list-style:none;  font-family:"Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif}
+#sub-nav-wrapper #sub-nav{ overflow:visible; width:920px; position:relative; left:-460px; margin:0 0 0 50%; text-align:center; border-bottom:none; list-style:none; font-family:"Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif}
 #sub-nav-wrapper #sub-nav li{ float:left; font-size:12px; font-weight:normal; display:inline; }
 #sub-nav-wrapper #sub-nav li a, 
 #sub-nav-wrapper #sub-nav li a:visited{ float:left; font-size:12px; color:#645c4c; display:block;  text-decoration:none;  padding:4px 9px 3px;  margin:4px 2px 0 0px;  border-bottom:none; line-height:18px}
@@ -303,8 +303,8 @@ a#cat4{ display:block; width:30px; height:24px; float:right; background-image:ur
 #sub-nav-wrapper #sub-nav li.page_item a:hover{ font-weight:normal; margin:8px 2px 0 0; padding:2px 10px 1px; color:#fff; border:1px solid #c0c0c0; background-color:#64655d;}
 #sub-nav-wrapper #sub-nav li.page_item a:active{ color:#404040;background-color:#dbdcca; }
 
-#sub-nav-wrapper{ background-color:transparent; margin-right:auto; margin-bottom:0pt; margin-left:auto; overflow-x:hidden; overflow-y:hidden;}
-#sub-nav-wrapper #sub-nav ul{ margin-left:24px; margin-top:-5px;}
+#sub-nav-wrapper{ float:left; background-color:transparent; margin: 0 auto 5px; }
+#sub-nav-wrapper #sub-nav ul{ margin:0 0 0 15px; }
 
 
 
@@ -339,6 +339,11 @@ body #ie-root #secondary-nav ul li.current_page_ancestor a:visited,
 body #ie-root #secondary-nav ul li.selected a, 
 body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-bottom:4px; padding-top:2px;}
 
+
+
+
+
+
 /* --- SHANTI Home Page ----------------
 ----------------------------------------- */
 
@@ -364,21 +369,20 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #home #sidebar #intro div.wp-btn p a:visited{ font: 0.88em arial,verdana,sans-serif; }
 #home #homepage_carousel p{ line-height:1.32em;}
 
-/******** UVa Profiles logging ********/
 
-#sub-nav #profiles-login-wrap ul,
-#sub-nav #profiles-login-wrap ul li,
-#sub-nav #profiles-login-wrap ul li a,
-#sub-nav #profiles-login-wrap ul li a:visited{ font-family:arial, sans-serif;}
+
+
+
+/******** UVa Profiles logging ********/
 
 #sub-nav #profiles-login-wrap ul li.log-in{ background-color:transparent; background-image:none;}
 
-#sub-nav #profiles-login-wrap{ display:inline; float:right; width:400px;}
-#sub-nav #profiles-login-wrap ul.login-menu{ padding:0px; margin:0px; float:right; position:relative; list-style:none; width:400px;}
-#sub-nav #profiles-login-wrap ul.login-menu li{ float:right; font-weight:bold; zoom: 1; background-color:transparent; line-height:22px; height:22px;}
+#sub-nav #profiles-login-wrap{ position:absolute; top:0px; right:0px; z-index:9999; width:400px;}
+#sub-nav #profiles-login-wrap ul.login-menu{ padding:0px; margin:0px; float:right; position:relative; list-style:none;}
+#sub-nav #profiles-login-wrap ul.login-menu li{ float:right; font-weight:bold; zoom:1; background-color:transparent; line-height:16px; height:16px;}
 
 #sub-nav #profiles-login-wrap ul.login-menu li a,
-#sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:12px; color:#645c4c; display:inline; padding:1px 9px; border-right:1px solid #666; margin:0; line-height:22px; height:14px; text-decoration:none;}
+#sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:12px; color:#645c4c; display:block; padding:1px 9px; border-right:1px solid #666; margin:0; line-height:10px; height:10px; text-decoration:none;}
 #sub-nav #profiles-login-wrap ul.login-menu li a:hover{ text-decoration:underline; color:#444;}
 #sub-nav #profiles-login-wrap ul.login-menu li.submenu a:hover{ text-decoration:none;}
 #sub-nav #profiles-login-wrap ul.login-menu li.login-last a,
@@ -388,22 +392,32 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #sub-nav #profiles-login-wrap ul.login-menu li.hover a{ color:#645c4c; }
 
 /*---------- login dropdown ------------------*/
-#sub-nav #profiles-login-wrap ul.login-menu ul{ width:100px; visibility:hidden; position:absolute; top:100%; left:-23px; z-index:999; list-style:none;}
-#sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; padding:3px 12px 5px 18px; font-weight:bold; background-color:#f6f6f6; color:#645c4c; border:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:-8px; z-index:999; list-style:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:18px; padding:2px 12px; font-weight:bold; background-color: #828378; color:#fff; border:1px solid #fff;}
 
-#sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ background-color:#ddd;background-image:none;}
-#sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#645c4c; background-image:none; }
+#sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ border:1px solid #aaa; background-color: #fff; background-image:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#415c7e; background-image:none; }
 
-#sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-first{ border-bottom:1px dashed #999;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-first a,
+#sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-first a:visited{ border-bottom:1px dashed #fff;}
 
 #sub-nav #profiles-login-wrap ul.login-menu ul li a,
-#sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ background-image:none; width:100px; display:inline-block; float:none; line-height:18px; padding:3px 0px; margin:0; text-decoration:none; border-right:none;}
-#sub-nav #profiles-login-wrap ul.login-menu ul li a:hover{ background-image:none; text-decoration:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:18px; height:18px; padding:0px; margin:0; text-decoration:none; border-right:none;}
+#sub-nav #profiles-login-wrap ul.login-menu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none;}
 
 /*---- IE fixes ----*/
 #ie-root #sub-nav #profiles-login-wrap ul.login-menu ul li{ display:inline; width:100%; }							  
 /* IE 6 & 7 Needs Inline Block */
 #ie-root-lte7 #sub-nav #profiles-login-wrap ul.login-menu ul li a{ border:none; width:100%; display:inline-block; }
+
+
+
+
+
+
+
+
+
 
 
 /******** SEARCH on navbar ********/
