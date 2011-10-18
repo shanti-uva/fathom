@@ -384,6 +384,7 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a,
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:12px; color:#645c4c; display:block; padding:1px 9px; border-right:1px solid #666; margin:0; line-height:10px; height:10px; text-decoration:none;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:hover{ text-decoration:underline; color:#444;}
+
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu a:hover{ text-decoration:none;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a,
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a:visited{ border:none; padding:1px 0px 1px 9px;}
@@ -392,24 +393,24 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.hover a{ color:#645c4c; }
 
 /*---------- login dropdown ------------------*/
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:-8px; z-index:999; list-style:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:16px; padding:2px 12px; font-weight:bold; background-color: #828378; color:#fff !important; border:1px solid #f7f7f7;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:-8px; z-index:999; list-style:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:16px; padding:2px 12px; font-weight:bold; background-color: #828378; color:#fff !important; border:1px solid #f7f7f7;}
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li:hover{ border:1px solid #aaa; background-color: #fff; background-image:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li.hover a{ color:#415c7e; background-image:none; }
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li:hover{ border:1px solid #aaa; background-color: #fff; background-image:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li.hover a{ color:#415c7e; background-image:none; }
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li.login-submenu-last{ 
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li.login-submenu-last{ 
 -moz-border-radius: 0px 0px 5px 5px; -webkit-border-radius:5px; -webkit-border-bottom-left-radius:5px;  -webkit-border-bottom-right-radius:5px;  border-radius:0px 0px 5px 5px;
 }
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li a,
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:16px; height:16px; padding:0px; margin:0; text-decoration:none; border-right:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a,
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:16px; height:16px; padding:0px; margin:0; text-decoration:none; border-right:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none;}
 
 /*---- IE fixes ----*/
-#ie-root #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li{ display:inline; width:100%; }							  
+#ie-root #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ display:inline; width:100%; }							  
 /* IE 6 & 7 Needs Inline Block */
-#ie-root-lte7 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu ul li a{ border:none; width:100%; display:inline-block; }
+#ie-root-lte7 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a{ border:none; width:100%; display:inline-block; }
 
 
 
