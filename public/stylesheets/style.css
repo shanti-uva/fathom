@@ -260,7 +260,8 @@ a#cat4{ display:block; width:30px; height:24px; float:right; background-image:ur
 
 /* --- Global Navigation ----------------
 ----------------------------------------- */
-#nav-wrapper{ background:url(../images/bg_nav_wrapper.png) repeat-x left bottom;  border-top:2px solid #ccc;  border-bottom:none}
+#nav-wrapper{ text-align:center; background:url(../images/bg_nav_wrapper.png) repeat-x left bottom; margin: 0 auto; border-top:2px solid #ccc;  border-bottom:none; }
+#nav{ width:920px; margin:0 auto;}
 #nav ul, #sub-nav ul{ list-style:none;  margin-top:3px;  margin-left:12px; font-family:"Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif}
 #nav ul li, #sub-nav ul li{ float:left; font-size:.75em; font-weight:bold}
 #nav ul li a, #nav ul li a:visited, #sub-nav ul li a, #sub-nav ul li a:visited{ float:left; color:#645c4c; display:block;  text-decoration:none;  padding:4px 9px 12px;  margin:1px 4px 0 1px;  border-bottom:none;  height:20px}
@@ -377,35 +378,41 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul li.log-in{ background-color:transparent; background-image:none;}
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap{ position:absolute; top:0px; right:0px; z-index:9999; width:400px;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap{ position:absolute; top:-3px; right:10px; z-index:9999; width:400px;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu{ padding:0px; margin:0px; float:right; position:relative; list-style:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li{ float:right; font-weight:bold; zoom:1; background-color:transparent; line-height:16px; height:16px;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li{ float:right; font-weight:bold; zoom:1; background-color:transparent; line-height:14px; height:14px; padding:3px 0px;}
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a,
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:12px; color:#645c4c; display:block; padding:1px 9px; border-right:1px solid #666; margin:0; line-height:10px; height:10px; text-decoration:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:12px; color:#645c4c; display:block; padding:3px 9px; border-right:1px solid #666; margin:0; line-height:10px; height:10px; text-decoration:none;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:hover{ text-decoration:underline; color:#444;}
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu a:hover{ text-decoration:none;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a,
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a:visited{ border:none; padding:1px 0px 1px 9px;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a:visited{ border-right:none; padding:3px 9px; padding-right:0px;}
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li:hover{ background-color:transparent; background-image:none; color:#645c4c; position:relative; }
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.hover a{ color:#645c4c; }
 
-/*---------- login dropdown ------------------*/
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:-8px; z-index:999; list-style:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:16px; padding:2px 12px; font-weight:bold; background-color: #828378; color:#fff !important; border:1px solid #f7f7f7;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu a{background: transparent url(../images/login.png) no-repeat 0 0px; padding:3px 9px; padding-left:20px; }
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu a:hover{ text-decoration:none; background: transparent url(../images/login.png) no-repeat 0 0px; padding:3px 9px; padding-left:20px;}
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li:hover{ border:1px solid #aaa; background-color: #fff; background-image:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu-logout a{background: transparent url(../images/logout.png) no-repeat 0 0px; padding:3px 9px; padding-left:20px; }
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu-logout a:hover{ text-decoration:none; background: transparent url(../images/logout.png) no-repeat 0 0px; padding:3px 9px; padding-left:20px;}
+
+
+/*---------- login dropdown ------------------*/
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:2px; z-index:999; list-style:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ background-image:none; float:left; margin:0px; line-height:20px; height:20px; padding:0px; font-weight:bold; background-color: #828378; color:#fff !important; border:1px solid #f7f7f7; border-top:none;}
+
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li:hover{ border:1px solid #aaa; border-top:none; background-color: #fff; background-image:none;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li.hover a{ color:#415c7e; background-image:none; }
 
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li.login-submenu-last{ 
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li.login-submenu-last{ border-top:none;
 -moz-border-radius: 0px 0px 5px 5px; -webkit-border-radius:5px; -webkit-border-bottom-left-radius:5px;  -webkit-border-bottom-right-radius:5px;  border-radius:0px 0px 5px 5px;
 }
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a,
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:16px; height:16px; padding:0px; margin:0; text-decoration:none; border-right:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:20px; height:20px; padding:0px 12px 3px; margin:0; text-decoration:none; border-right:none; }
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none; padding:0px 12px 3px;}
 
 /*---- IE fixes ----*/
 #ie-root #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ display:inline; width:100%; }							  
@@ -424,22 +431,27 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 
 /******** SEARCH on navbar ********/
 
-#uvaprofiles-search-wrap { display:inline; width:200px; float:right;}
-#uvaprofiles-search-wrap p { font-size:0px; display:inline; position:absolute; }
+#nav{ display:inline-block; overflow:visible;}
 
-#uvaprofiles-search-wrap{ }
+#uvaprofiles-search-wrap { display:inline; width:200px; float:right; position:relative; overflow:visible;}
+#uvaprofiles-search-wrap p { font-size:11px; display:inline; position:absolute; top:-20px; right:30px; z-index:9999;}
+
+#uvaprofiles-search-wrap p a,
+#uvaprofiles-search-wrap p a:visited{ color:#aaa; }
+#uvaprofiles-search-wrap p a:hover{ color:#ccc; text-decoration:none;}
 
 #uvaprofiles-search-wrap form { float:right; width:150px; background-image:none; background-color:transparent;}
 
 #uvaprofiles-search-wrap form input#s{
 cursor: pointer;
-line-height: 1em;
-height: 16px;
+line-height: 18px;
+height: 18px;
 padding: 1px 18px 1px 6px;
 color: #aaa;
 width: 120px;
 font-size: 13px;
-position: relative; left:-24px; 
+position: relative; 
+left:-24px; 
 background-color:#fff;
 margin-top:4px;
 float:right;
@@ -452,8 +464,8 @@ float:right;
  
 #uvaprofiles-search-wrap form #submit {
 position: relative;
-top: -18px;
-left:130px;
+top: -19px;
+left:67px;
 border: none;
 text-indent: -9999px;
 overflow: hidden;
