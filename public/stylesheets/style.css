@@ -16,7 +16,8 @@
 .uva-log-in{ background:url(../images/uva_login.gif) no-repeat right top}
 .logged-in{ background:url(../images/logged_in.png) no-repeat right top}
 
-/*#main-content-wrapper #main{ border-top:3px double #aaa; padding-top:3px;}*/
+#main-content-wrapper{ margin:0 auto;}
+#main{ margin:0 auto; width:920px;}
 
 /* Login */
 #login-wrapper .entry{ width:450px;  float:left}
@@ -184,11 +185,7 @@ div.wp-btn p a:hover span {background:url(../images/btnBL.gif) left bottom no-re
 #sidebar p#mc-sidebar-reg{font-style:italic; padding-left:5px; padding-bottom:0px; margin-top:15px; margin-bottom:-12px; font-size:1.32em; color:#707070}
 #sidebar #mc_signup_container form input.button{width:90px}
 #comment, #author, #email, #url{ background:#f2f2f2; border:none; padding:3px}
-#search #s{color:#645c4c; width:105px; height:23px; padding:2px 0px 0px 10px; border:none; border-bottom-width:0px; /*margin-right:-10px;*/ margin-top:0px; margin-bottom:0px; color:#505050; background-color:transparent; }
-/*#ie-root #search #s{padding-top:0px; margin:0}*/
-#search{width:135px; height:21px; float:right; font-size:.8em; margin-top:-2px; border:none; border-bottom-width:0px; border-bottom-width:none; padding-top:1px; padding-right:0px; background:#fff url(../images/searchfield.png) no-repeat right bottom}
-/*#ie-root #search{line-height:0.5em; font-size:9px; margin-top:-17px}*/
-#search #submit{width:10px; height:10px; margin-top:0px; /*background-color:#fff;*/ position:relative; top:-22px; left:115px; }
+
 #login input, #login label{ width:100px; margin-bottom:4px}
 #login input{ color:#bfe5f8; padding:0px 12px 2px 8px; border:none; background:#265b7a; font-size:1.12em}
 #login-page table input, #login-page table label{ width:150px; margin-bottom:4px}
@@ -304,7 +301,7 @@ a#cat4{ display:block; width:30px; height:24px; float:right; background-image:ur
 #sub-nav-wrapper #sub-nav li.page_item a:hover{ font-weight:normal; margin:8px 2px 0 0; padding:2px 10px 1px; color:#fff; border:1px solid #c0c0c0; background-color:#64655d;}
 #sub-nav-wrapper #sub-nav li.page_item a:active{ color:#404040;background-color:#dbdcca; }
 
-#sub-nav-wrapper{ clear:both; background-color:transparent; margin: 0 auto; }
+#sub-nav-wrapper{ height:30px; background-color:transparent; margin:0 auto; }
 #sub-nav-wrapper #sub-nav ul{ margin:0 0 0 15px; }
 
 
@@ -383,8 +380,8 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li{ float:right; font-weight:bold; zoom:1; background-color:transparent; line-height:14px; height:14px; padding:3px 0px;}
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a,
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:12px; color:#645c4c; display:block; padding:3px 9px; border-right:1px solid #666; margin:0; line-height:10px; height:10px; text-decoration:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:hover{ text-decoration:underline; color:#444;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:visited{ float:none; font-size:11px; color:#483d25; display:block; padding:3px 9px; border-right:1px solid #666; margin:0; line-height:10px; height:10px; text-decoration:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li a:hover{ text-decoration:underline; color:#483d25;}
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a,
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.login-last a:visited{ border-right:none; padding:3px 9px; padding-right:0px;}
@@ -400,8 +397,8 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 
 
 /*---------- login dropdown ------------------*/
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul{ width:90px; visibility:hidden; position:absolute; top:100%; left:2px; z-index:999; list-style:none;}
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ background-image:none; float:left; margin:0px; line-height:20px; height:20px; padding:0px; font-weight:bold; background-color: #828378; color:#fff !important; border:1px solid #f7f7f7; border-top:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul{ width:80px; visibility:hidden; position:absolute; top:100%; left:3px; z-index:999; list-style:none;}
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li{ background-image:none; float:left; margin:0px; line-height:16px; height:18px; padding:0px; font-weight:bold; background-color: #828378; color:#fff !important; border:1px solid #f7f7f7; border-top:none;}
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li:hover{ border:1px solid #aaa; border-top:none; background-color: #fff; background-image:none;}
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li.hover a{ color:#415c7e; background-image:none; }
@@ -411,7 +408,7 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 }
 
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a,
-#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:visited{ color:#fff; background-image:none; width:90px; display:inline-block; float:none; line-height:20px; height:20px; padding:0px 12px 3px; margin:0; text-decoration:none; border-right:none; }
+#sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:visited{ color:#fff; background-image:none; width:80px; display:inline-block; float:none; height:16px; line-height:18px; padding:0px 12px 3px; margin:0; text-decoration:none; border-right:none; }
 #sub-nav-wrapper #sub-nav #profiles-login-wrap ul.login-menu li.submenu ul li a:hover{ color:#415c7e; background-image:none; text-decoration:none; padding:0px 12px 3px;}
 
 /*---- IE fixes ----*/
@@ -434,27 +431,28 @@ body #ie-root #secondary-nav ul li.selected a:visited{ font-size:13px; padding-b
 #nav{ display:inline-block; overflow:visible;}
 
 #uvaprofiles-search-wrap { display:inline; width:200px; float:right; position:relative; overflow:visible;}
-#uvaprofiles-search-wrap p { font-size:11px; display:inline; position:absolute; top:-20px; right:30px; z-index:9999;}
+#uvaprofiles-search-wrap p { font-size:11px; display:inline; position:absolute; top:-20px; right:50px; z-index:9999;}
 
 #uvaprofiles-search-wrap p a,
 #uvaprofiles-search-wrap p a:visited{ color:#aaa; }
 #uvaprofiles-search-wrap p a:hover{ color:#ccc; text-decoration:none;}
 
-#uvaprofiles-search-wrap form { float:right; width:150px; background-image:none; background-color:transparent;}
+#uvaprofiles-search-wrap form { margin-right:10px; float:right; height:18px; width:150px; background-image:none; background-color:transparent;}
 
 #uvaprofiles-search-wrap form input#s{
 cursor: pointer;
-line-height: 18px;
+line-height: 16px;
 height: 18px;
-padding: 1px 18px 1px 6px;
+padding: 1px 18px 0px 6px;
 color: #aaa;
 width: 120px;
 font-size: 13px;
 position: relative; 
 left:-24px; 
+top:0px;
 background-color:#fff;
-margin-top:4px;
-float:right;
+margin:1px 0 0 0px;
+border-width:1px;
 }
 
 /*----- safari fix -----*/
