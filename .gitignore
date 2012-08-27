@@ -5,3 +5,6 @@ config/environments/quandu_*.rb
 doc/plugins/*
 log/*
 public/javascripts/tiny_mce/
+.bundle
+log/*.log
+tmp/
