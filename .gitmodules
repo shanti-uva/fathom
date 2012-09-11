@@ -25,6 +25,3 @@
 [submodule "vendor/plugins/proxy_engine"]
 	path = vendor/plugins/proxy_engine
 	url = git://github.com/thl/proxy_engine.git
-[submodule "authenticated_system"]
-	path = authenticated_system
-	url = git://github.com/thl/authenticated_system.git
