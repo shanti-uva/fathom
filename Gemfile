@@ -28,7 +28,7 @@ gem "recaptcha", :require => "recaptcha/rails"
 gem 'RedCloth', '~> 3.0.4' #, :lib=>"redcloth"
 gem 'solr-ruby', '~> 0.0.7'#, :lib => "solr"
 
-gem 'jquery-rails', '0.2.7'
+gem 'jquery-rails', '3.1.3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
